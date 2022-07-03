@@ -1,0 +1,5 @@
+---
+# tasks file for role1
+
+- import_tasks: httpd.yml
+- import_tasks: dynamic.yml

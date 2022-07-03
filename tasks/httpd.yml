@@ -1,0 +1,22 @@
+---      
+    - name: Install Httpd
+      yum:
+        name: httpd
+        state: installed
+
+    - name: start Httpd
+      service:
+        name: httpd
+        state: started
+
+    - name: Install git
+      yum:
+        name: git
+        state: installed
+
+    - name: git clone
+      git:
+        repo: https://github.com/ravi2krishna/ecomm.git
+        dest: /var/www/html
+
+...
